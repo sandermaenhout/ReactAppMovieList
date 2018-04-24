@@ -1,20 +1,20 @@
-import React, { Component } from 'react';
-import './App.css';
+import React, { Component } from "react";
+import MovieList from "./MovieList";
+import "./App.css";
 
 class App extends Component {
   render() {
     return (
       <div>
         <header>
-          <h1>BestMovies</h1>
+          <h1 className="title">BestMovies</h1>
         </header>
-        <p>
-          lijst Top 15 movies.  
-        </p>
-      {/* <div>
-        <input type="text"/>
-        <button>Verzenden</button>
-      </div> */}
+        <main>
+          <section className="movies-block">
+            <h2 className="hide">Movies</h2>
+            <MovieList />
+          </section>
+        </main>
       </div>
     );
   }
